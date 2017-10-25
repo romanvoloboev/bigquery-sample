@@ -27,7 +27,7 @@ public class AppTest {
     @Before
     public void setUp() throws Exception {
         datasetId = "owox_dataset_1";
-        Credentials credentials = App.loadCredentialsFromFile("src/test/resources/test.json");
+        Credentials credentials = App.loadCredentialsFromFile("src/test/resources/testCredentials.json");
         bigQueryService = BigQueryOptions.newBuilder().setCredentials(credentials).setProjectId("owox-test-1").build().getService();
         expirationTime = LocalDateTime.now().plusWeeks(2).toInstant(ZoneOffset.UTC).toEpochMilli();
     }
