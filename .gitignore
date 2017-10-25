@@ -1,7 +1,4 @@
 .idea/
-owoxtasks.iml
+*.iml
 task1/target/
-task1/task1.iml
-task2/src/test/resources/
 task2/target/
-task2/task2.iml
